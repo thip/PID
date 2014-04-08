@@ -6,7 +6,7 @@ PIDController::PIDController(pid_bundle coeffs){
   this->coeffs = coeffs;
 }
 
-//updates the internals of the controller, ignores d for now
+//updates the internals of the controller
 void PIDController::update(double delta, long millis){
     static double t_0 = 1;
     static double p_0 = 0;
